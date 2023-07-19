@@ -13,6 +13,12 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      position: relative;
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
     h1 {
       font-size: 56px;
@@ -21,12 +27,13 @@
       color: #fff;
       margin: 0;
       text-align: center;
-      font-family: rubik,sans-serif;
+      font-family: rubik, sans-serif;
     }
   </style>
 </head>
 <body>
-  <h1>International Freight <br> Management <br> Specialists</h1>
+  <canvas id="canvas"></canvas>
+  <h1>International Freight<br>Management<br>Specialists</h1>
 
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <script src="https://d3js.org/topojson.v1.min.js"></script>
