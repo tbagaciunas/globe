@@ -30,11 +30,59 @@
       font-family: rubik, sans-serif;
       z-index: 1;
     }
+    #cardWrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform-origin: center;
+      position: relative;
+      margin-top: 50px;
+    }
+    .cardContent {
+      position: absolute;
+      height: 250px;
+      width: 400px;
+      border-radius: 30px;
+      box-sizing: border-box;
+      padding: 100px 0 30px 50px;
+    }
+    .content {
+      font-family: arial;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .card {
+      height: 250px;
+      width: 400px;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+      border-radius: 30px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px outset rgba(255, 255, 255, 0.3);
+      box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.2);
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 250px;
+      border-radius: 30px;
+      opacity: 0.5;
+      background-image: url('https://via.placeholder.com/400x250');
+    }
   </style>
 </head>
 <body>
   <canvas id="canvas"></canvas>
   <h1>International Freight<br>Management<br>Specialists</h1>
+
+  <div id="cardWrap">
+    <div class="card"></div>
+    <div class="cardContent">
+      <h1 class="content">John Muir</h1>
+      <h3 class="content">Software Developer</h3>
+    </div>
+  </div>
 
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <script src="https://d3js.org/topojson.v1.min.js"></script>
