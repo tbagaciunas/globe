@@ -35,6 +35,12 @@
       z-index: 1;
     }
     
+    .card-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 150px; /* Add margin bottom of 150px */
+    }
+    
     .card {
       position: relative;
       width: 200px;
@@ -44,8 +50,7 @@
       border-radius: 4vmin;
       overflow: hidden;
       box-shadow: 0 .5vmin 1vmin rgba(0, 0, 0, .4);
-      margin-top: 30px;
-      margin-bottom: 150px; /* Add margin bottom of 150px */
+      margin: 0 10px; /* Add spacing between cards */
     }
     
     .card::before {
@@ -61,71 +66,36 @@
     
     .text {
       position: absolute;
-      top: 16vmin;
+      top: 50%;
       left: 0;
       right: 0;
       text-align: center;
+      transform: translateY(-50%); /* Center text vertically */
     }
     
-    .button {
-      position: absolute;
-      bottom: 18vmin;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-    }
-    
-    button {
-      width: 30vmin;
-      height: 8vmin;
-      background: rgb(64, 93, 189);
-      border: none;
-      border-radius: 5vmin;
-      outline: transparent;
-      cursor: pointer;
-    }
-    
-    button:hover {
-      background: rgb(92, 128, 226);
-      box-shadow: 0 0 .5vmin #fff;
-    }
   </style>
 </head>
 <body>
   <canvas id="canvas"></canvas>
   <h1>International Freight<br>Management<br>Specialists</h1>
 
-  <div class="card">
-    <div class="text">
-      <h3>Original flavor</h3>
+  <div class="card-container">
+    <div class="card">
+      <div class="text">
+        <h3>Original flavor</h3>
+      </div>
     </div>
-    <div class="button">
-      <button>
-        <h2>Purchase</h2>
-      </button>
-    </div>
-  </div>
 
-  <div class="card">
-    <div class="text">
-      <h3>Card 2</h3>
+    <div class="card">
+      <div class="text">
+        <h3>Card 2</h3>
+      </div>
     </div>
-    <div class="button">
-      <button>
-        <h2>Purchase</h2>
-      </button>
-    </div>
-  </div>
 
-  <div class="card">
-    <div class="text">
-      <h3>Card 3</h3>
-    </div>
-    <div class="button">
-      <button>
-        <h2>Purchase</h2>
-      </button>
+    <div class="card">
+      <div class="text">
+        <h3>Card 3</h3>
+      </div>
     </div>
   </div>
 
