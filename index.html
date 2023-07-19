@@ -11,8 +11,8 @@
       overflow: hidden;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
+      align-items: flex-end; /* Align items to the bottom */
+      min-height: calc(100vh - 150px); /* Set the minimum height of the body, considering the margin bottom */
     }
     
     canvas {
@@ -20,6 +20,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      z-index: -1; /* Move the canvas behind other elements */
     }
     
     h1 {
@@ -43,6 +44,7 @@
       overflow: hidden;
       box-shadow: 0 .5vmin 1vmin rgba(0, 0, 0, .4);
       margin-top: 30px;
+      margin-bottom: 150px; /* Add margin bottom of 150px */
     }
     
     .card::before {
