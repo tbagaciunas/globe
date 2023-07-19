@@ -45,7 +45,7 @@ d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/95802/world-110m.json", fu
 
     context.beginPath();
     path(land);
-    context.fillStyle = "#dadac4";
+    context.fillStyle = "#0057CC";
     context.fill();
 
     context.beginPath();
@@ -58,7 +58,7 @@ d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/95802/world-110m.json", fu
 
     context.beginPath();
     path(land);
-    context.fillStyle = "#737368";
+    context.fillStyle = "#19008E";
     context.fill();
     context.lineWidth = 0;
     context.strokeStyle = "transparent";
