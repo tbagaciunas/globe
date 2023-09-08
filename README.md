@@ -13,3 +13,6 @@ This project is a minimalist landing page featuring a captivating spinning globe
 Explore the project by visiting the live website: [Globe Landing Page](https://tbagaciunas.github.io/globe/)
 
 Feel free to check out the live version of the landing page to experience the spinning globe and glassmorphism effect in action.
+
+
+![Project Illustration](globe.png)
